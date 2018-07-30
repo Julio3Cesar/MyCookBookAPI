@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COREMyCookBookAPI", "COREMyCookBookAPI\COREMyCookBookAPI.csproj", "{3F441D13-9E41-4546-8766-27CEDABAF57B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F441D13-9E41-4546-8766-27CEDABAF57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F441D13-9E41-4546-8766-27CEDABAF57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F441D13-9E41-4546-8766-27CEDABAF57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F441D13-9E41-4546-8766-27CEDABAF57B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A14713F-0753-44CF-9CD4-27F097EED900}
+	EndGlobalSection
+EndGlobal
