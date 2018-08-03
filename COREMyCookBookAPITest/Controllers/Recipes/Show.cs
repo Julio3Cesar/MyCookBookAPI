@@ -14,7 +14,7 @@ namespace COREMyCookBookAPITest.Controllers.Recipes
             _recipeRepositoryMock.Setup(c => c.GetById(id))
                 .Returns(recipeReturnedByTheRepository);
 
-            var recipeReturnedByTheController = _recipesController.Index();
+            var recipeReturnedByTheController = _recipesController.Show(id);
 
             Assert.AreEqual(recipeReturnedByTheRepository, recipeReturnedByTheController);
         }
