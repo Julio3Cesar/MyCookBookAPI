@@ -26,7 +26,7 @@ namespace COREMyCookBookAPI.Repositories
 
         public async Task Delete(int id)
         {
-            var entity = await GetById(id);
+            var entity = GetById(id);
             MyCookBookContext.Set<TEntity>().Remove(entity);
             await MyCookBookContext.SaveChangesAsync();
         }
@@ -36,11 +36,11 @@ namespace COREMyCookBookAPI.Repositories
             return MyCookBookContext.Set<TEntity>().AsNoTracking();
         }
 
-        public async Task<TEntity> GetById(int id)
+        public TEntity GetById(int id)
         {
-            return await MyCookBookContext.Set<TEntity>()
+            return MyCookBookContext.Set<TEntity>()
                 .AsNoTracking()
-                .FirstOrDefaultAsync(e => e.Id == id);
+                .FirstOrDefault(e => e.Id == id);
         }
 
         public async Task Update(int id, TEntity entity)
