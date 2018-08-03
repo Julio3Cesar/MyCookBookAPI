@@ -25,7 +25,15 @@ namespace COREMyCookBookAPITest.Controllers.Recipes
             var recipes = new List<Recipe>();
             for (var i = 0; i < size; i++)
             {
-                recipes.Add(new Recipe());
+                recipes.Add(new Recipe {
+                    Cuisine = "Cuisine" + i,
+                    Difficulty = "Difficulty" + i,
+                    Ingredients = "Ingredients" + i,
+                    Preparation = "Preparation" + i,
+                    PreparationTime = i,
+                    Title = "Title" + i,
+                    Type = "Type" + i
+                });
             }
 
             return recipes;
