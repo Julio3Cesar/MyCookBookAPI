@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
+using System;
 
 namespace COREMyCookBookAPI.Models
 {
-    public class Recipe
+    public class Recipe : Entity
     {
+        public String Title { get; set; }
+        public String Type { get; set; }
+        public String Cuisine { get; set; }
+        public String Difficulty { get; set; }
+        public Double PreparationTime { get; set; }
     }
 }

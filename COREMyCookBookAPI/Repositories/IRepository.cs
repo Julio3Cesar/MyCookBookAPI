@@ -1,12 +1,16 @@
-﻿using System.Linq;
+﻿using COREMyCookBookAPI.Models;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace COREMyCookBookAPI
+namespace COREMyCookBookAPI.Repositories
 {
-    public interface IRepository<T>
+    public interface IRepository<TEntity> where TEntity : Entity
     {
-        IQueryable<T> GetAll();
-        void InsertOnSubmit(T entity);
-        void DeleteOnSubmit(T entity);
-        void SubmitChanges();
+        IQueryable<TEntity> GetAll();
+        Task<TEntity> GetById(int id);
+        EntityEntry Create(TEntity entity);
+        Task Update(int id, TEntity entity);
+        Task Delete(int id);
     }
 }

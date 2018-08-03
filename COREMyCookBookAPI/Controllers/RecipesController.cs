@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using COREMyCookBookAPI.Models;
+using COREMyCookBookAPI.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace COREMyCookBookAPI.Controllers
@@ -7,18 +8,18 @@ namespace COREMyCookBookAPI.Controllers
     [Route("api/[controller]")]
     public class RecipesController : Controller
     {
-        private IRepository<Recipe> RecipeRepository;
+        private IRepository<Recipe> _recipeRepository;
 
         public RecipesController(IRepository<Recipe> recipeRepository)
         {
-            RecipeRepository = recipeRepository;
+            _recipeRepository = recipeRepository;
         }
 
         // GET api/recipes
         [HttpGet]
         public IEnumerable<Recipe> Index()
         {
-            return RecipeRepository.GetAll();
+            return _recipeRepository.GetAll();
         }
     }
 }
