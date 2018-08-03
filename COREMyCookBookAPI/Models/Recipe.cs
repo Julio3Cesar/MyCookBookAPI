@@ -10,5 +10,7 @@ namespace COREMyCookBookAPI.Models
         public String Cuisine { get; set; }
         public String Difficulty { get; set; }
         public Double PreparationTime { get; set; }
+        public String Ingredients { get; set; }
+        public String Preparation { get; set; }
     }
 }
