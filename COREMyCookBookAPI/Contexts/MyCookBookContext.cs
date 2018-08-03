@@ -9,5 +9,6 @@ namespace COREMyCookBookAPI.Context
         { }
 
         public DbSet<Recipe> Recipes { get; set; }
+        public DbSet<Entity> Entitys { get; set; }
     }
 }
