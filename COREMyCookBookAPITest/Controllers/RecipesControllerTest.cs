@@ -6,7 +6,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace COREMyCookBookAPITest
+namespace COREMyCookBookAPITest.Controllers
 {
     [TestFixture]
     public class RecipesControllerTest
